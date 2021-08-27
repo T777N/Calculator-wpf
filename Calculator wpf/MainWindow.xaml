@@ -1,0 +1,309 @@
+﻿<Window x:Class="Calculator_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="560">
+    <Grid Background="Black">
+
+
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" 
+                Grid.Row="5"
+                Name="BtnTF"
+                Content="+/-"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="BtnTF_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="1"
+                Grid.Row="5"
+                Name="Btn0"
+                Content="0"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="2"
+                Grid.Row="5"
+                Name="BtnN"
+                Content="."
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                 Click="BtnN_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="0"
+                Grid.Row="4"
+                Name="Btn1"
+                Content="1"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="1"
+                Grid.Row="4"
+                Name="Btn2"
+                Content="2"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="2"
+                Grid.Row="4"
+                Name="Btn3"
+                Content="3"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="0"
+                Grid.Row="3"
+                Name="Btn4"
+                Content="4"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="1"
+                Grid.Row="3"
+                Name="Btn5"
+                Content="5"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="2"
+                Grid.Row="3"
+                Name="Btn6"
+                Content="6"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="0"
+                Grid.Row="2"
+                Name="Btn7"
+                Content="7"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="1"
+                Grid.Row="2"
+                Name="Btn8"
+                Content="8"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="2"
+                Grid.Row="2"
+                Name="Btn9"
+                Content="9"
+                Background="#635e69"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="Btn_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="3"
+                Grid.Row="5"
+                Name="BtnSum"
+                Content="="
+                Background="#f3904f"
+                Foreground="White"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="BtnSum_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="3"
+                Grid.Row="4"
+                Name="BtnPlus"
+                Content="+"
+                Background="#f3904f"
+                Foreground="White"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="BtnPlus_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="3"
+                Grid.Row="3"
+                Name="BtnMinus"
+                Content="-"
+                Background="#f3904f"
+                Foreground="White"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="BtnMinus_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="3"
+                Grid.Row="2"
+                Name="BtnVurma"
+                Content="x"
+                Background="#f3904f"
+                Foreground="White"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="BtnVurma_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="3"
+                Grid.Row="1"
+                Name="BtnBolme"
+                Content="/"
+                Background="#f3904f"
+                Foreground="White"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="BtnBolme_Click"
+                >
+
+        </Button>
+
+
+        <Button Grid.Column="0"
+                Grid.Row="1"
+                Name="BtnDelete"
+                Content="Del"
+                Background="#AFA9A8"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="BtnDelete_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="1"
+                Grid.Row="1"
+                Name="BtnKvadrat"
+                Content="x2"
+                Background="#AFA9A8"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS"
+                Click="BtnKvadrat_Click"
+                >
+
+        </Button>
+
+        <Button Grid.Column="2"
+                Grid.Row="1"
+                Name="BtnDeleteAll"
+                Content="C"
+                Background="#AFA9A8"
+                Foreground="Black"
+                FontSize="45"
+                FontFamily="Comic sans MS" Click="BtnDeleteAll_Click"
+                >
+
+        </Button>
+
+        <Label Name="Label"
+               FontSize="70"
+               Background="White"
+               Grid.Row="0" Grid.ColumnSpan="4"
+               FontFamily="Comic sans MS"
+               Foreground="Black"
+               >
+              
+        </Label>
+
+        <Label Name="Label2"
+               FontSize="20"
+               Background="White" 
+               Grid.Row="0" Grid.Column="3" Margin="0,0,10,70"  
+               FontFamily="Comic sans MS"
+               Foreground="DarkGray"
+            />
+
+    </Grid>
+</Window>
